@@ -1,0 +1,109 @@
+
+
+body{
+    background-image:url(body2.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh;
+    
+}
+h1{
+    font-family: 'Audiowide', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-family: 'Rubik Glitch', cursive;
+    font-family: 'Syne Mono', monospace;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 20px;
+} 
+#form{
+    text-align: center;
+    background-image:url(page.jpg);
+    background-position: center; 
+    background-repeat:round;
+    background-size: 100%;
+    padding: 20px;
+    width: 400px;
+    height: 260px;
+    margin: auto;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-family: 'Rubik Glitch', cursive;
+    font-family: 'Syne Mono', monospace;
+
+}
+.button{
+    background-color: rgb(198, 36, 128) !important;
+}
+.note{
+  background-image: url(note2.jpg);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  width: 250px;
+  height: 270px;
+  margin-top: 100px; 
+  margin-left: 20px;
+  opacity: 1;
+  z-index: 2000;
+  overflow: auto;
+  position: relative;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animationNote:last-child{
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function:ease;
+    animation-duration: 5s;  
+}
+.taskContect{
+    padding: 30px;
+    position: absolute;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Glegoo', serif;
+}
+.date{
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Glegoo', serif;
+    font-size: small;
+}
+.time{
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Glegoo', serif;
+    font-size: small;
+
+}
+.icon{
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    border: 1px solid white;
+    opacity: 0;
+}
+.note :hover{
+
+    transition: all 0.3s;
+    opacity: 1;
+}
